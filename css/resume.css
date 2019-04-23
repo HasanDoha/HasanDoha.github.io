@@ -48,7 +48,16 @@ p.enlarge span { color: #000 }
 
 /* //-- section styles -- */
 
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf
+{
+  display: block;
+  /* float: left; */
+  background: #666;
+  color: white;
+  padding: 6px 50px 6px 12px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
 a#pdf:hover { background: #222; }
 
 .job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
@@ -67,5 +76,40 @@ a#pdf:hover { background: #222; }
 #srt-ttab img.last { margin-top: 20px }
 
 /* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u{width:80.2%;}
-.yui-gf div.first{width:12.3%;}
+/* .yui-gf .yui-u{width:80.2%;}
+.yui-gf div.first{width:12.3%;} */
+.yui-gf .yui-u
+{
+  width:80.2%;
+}
+.yui-gf div.first
+{
+  width:12.3%;
+}
+
+div.yui-u.first
+{
+  width:100%;
+  align-content: center;
+}
+
+div.yui-u.second {
+  width:66%;
+  float:left;
+  margin-left: 0%;
+}
+
+.school {
+    position: relative;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+.school h4 {
+  position: absolute;
+  top: 0.35em;
+  right: 0;
+}
+.school p {
+  margin: 0.75em 0 3em 0;
+}
